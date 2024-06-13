@@ -1,0 +1,373 @@
+/* General Styles */
+body {
+  background-color: #1a1a1a; /* Midnight black background */
+  color: #f7f7f7; /* Light text color */
+  font-family: 'Arial', sans-serif; /* Consistent font family */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #f7f7f7; /* Light text color */
+}
+
+
+
+/* Home Styles */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a; /* Midnight black background */
+  color: #f7f7f7; /* Light text */
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 250px; /* Larger size */
+  height: 250px;
+  border-radius: 10px; /* Square with slight rounding */
+  margin-right: 50px; /* Space between photo and text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e0e0e0; /* Light grey color */
+  text-align: left;
+}
+
+.home h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: #b0b0b0; /* Light grey color */
+}
+
+.home p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #d0d0d0; /* Muted text color */
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  background-color: #343a40; /* Dark grey background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #212529; /* Darker grey on hover */
+}
+
+.download-cv {
+  background-color: #4caf50; /* Green background for download button */
+}
+
+.download-cv:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+
+/* About Styles */
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a; /* Midnight black background */
+  color: #e0e0e0; /* Light grey for text */
+  text-align: left;
+  padding: 40px 20px; /* More padding for better spacing */
+  font-family: 'Arial', sans-serif; /* Professional font */
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #f2f2f2; /* White text for header */
+}
+
+.about h3 {
+  font-size: 1.75rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #f2f2f2; /* White text for subheaders */
+  border-bottom: 2px solid #4CAF50; /* Green underline */
+  padding-bottom: 10px;
+}
+
+.about-text {
+  padding: 25px;
+  background-color: #252525; /* Dark grey background */
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  width: 80%;
+  max-width: 800px;
+  line-height: 1.6; /* Better line spacing for readability */
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Larger gap for better spacing */
+}
+
+.social-icon {
+  color: #f2f2f2; /* White for icons */
+  font-size: 28px; /* Larger icon size */
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #4CAF50; /* Green on hover */
+}
+
+.email-text {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem; /* Consistent font size */
+}
+
+.email-text a {
+  color: #4CAF50; /* Green for email link */
+  text-decoration: none;
+}
+
+.email-text a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about h3 {
+    font-size: 1.5rem;
+  }
+
+  .email-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* Projects Styles */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background-color: #1a1a1a; /* Midnight black background */
+}
+
+.project {
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #333; /* Darker grey background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  width: 300px;
+  text-align: center;
+}
+
+.project:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+  color: #f7f7f7; /* Light text color */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.project p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #d0d0d0; /* Muted text color */
+}
+
+.logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Skills Styles */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a; /* Midnight black background */
+  color: #f7f7f7;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  background: -webkit-linear-gradient(#29b6f6, #1c8bd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard property for compatibility */
+}
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: linear-gradient(145deg, #333, #444); /* Gradient background */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #444, #555); /* Darker gradient on hover */
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 4px 6px black); /* Shadow effect */
+}
+
+.skill-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #29b6f6; /* Light blue color */
+  transition: color 0.3s;
+}
+
+.skill-item:hover h3 {
+  color: #e0e0e0; /* Change color on hover */
+}
+
+/* Contact Form Styles */
+.ContactMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #1a1a1a; /* Background color for the whole project */
+  color: #f7f7f7;
+  text-align: center;
+}
+
+.ContactMe h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  background: -webkit-linear-gradient(#29b6f6, #1c8bd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard property for compatibility */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%; /* Ensure the form takes full width up to 400px */
+  margin: auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 1rem;
+  color: #f7f7f7;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #29b6f6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e88e5;
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a; /* Dark background */
+  color: #f7f7f7;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
