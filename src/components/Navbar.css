@@ -21,7 +21,7 @@
 }
 
 .navbar li {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .navbar a {
@@ -58,14 +58,5 @@
 @media (max-width: 768px) {
   .navbar a {
     font-size: 0.9rem; /* Smaller text size */
-  }
-
-  .navbar ul {
-    justify-content: center; /* Center the list items */
-    width: 100%; /* Ensure the ul takes the full width */
-  }
-
-  .navbar li {
-    margin: 0 6px; /* Reduce margin to fit items better */
   }
 }
