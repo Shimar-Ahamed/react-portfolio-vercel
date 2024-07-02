@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .navbar {
   background-color: #1C1C1C; /* Slightly lighter shade for contrast */
   padding: 1rem 2rem;
@@ -10,7 +11,6 @@
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Slightly more pronounced shadow */
 }
-
 
 .navbar ul {
   list-style: none;
@@ -52,4 +52,11 @@
 .navbar a:hover::after, .navbar a:focus::after {
   width: 100%;
   left: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 0.7rem; /* Smaller text size */
+  }
 }
