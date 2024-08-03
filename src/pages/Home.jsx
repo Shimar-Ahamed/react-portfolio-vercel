@@ -17,7 +17,7 @@ function Home() {
                     <Link to="contact" smooth={true} duration={500}>
                         <button>Contact Me</button>
                     </Link>
-                    <a href="/Shimar's CV Fullstack Dev (IIT).pdf" download>
+                    <a href="/Shimar_Resume IIT.pdf" download>
                         <button className="download-cv">Download CV</button>
                     </a>
                 </div>
