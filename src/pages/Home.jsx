@@ -9,7 +9,7 @@ function Home() {
             <img src={profilePhoto} alt="Shimar Ahamed" className="profile-photo" />
             <div className="content">
                 <h1>SHIMAR AHAMED</h1>
-                <h2>Software Engineering Undergraduate</h2>
+                <h2>Software Engineering Undergraduate (IIT)</h2>
                 <p>
                     I specialize in building modern, responsive web applications with a focus on performance and user experience. With expertise in both front-end and back-end technologies, I strive to create seamless and efficient digital solutions.
                 </p>
